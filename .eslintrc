@@ -1,0 +1,17 @@
+{
+	"env": {
+		"node": true,
+		"es6": true
+	},
+	"parserOptions": {
+		"ecmaVersion": 2018
+	},
+	"extends": "loopback",
+	"rules": {
+		"max-len": ["error", 120, 2, {
+			"ignoreComments": true,
+			"ignoreUrls": true,
+			"ignorePattern": "^\\s*var\\s.+=\\s*(require\\s*\\()|(/)"
+		}]
+	}
+}
